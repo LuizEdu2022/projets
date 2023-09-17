@@ -37,13 +37,13 @@ class ChannelForm extends React.Component{
 
   }
   onChange(e){
-
+    console.log(e.target.value);
   }
   render(){
     return(
       <form onSubmit={this.onSubmit.bind(this)}>
-        <input type="text"></input>
-        onChange={this.onChange.bind(this)}
+        <input type="text"
+        onChange={this.onChange.bind(this)}></input>
       </form>
     )
   }
